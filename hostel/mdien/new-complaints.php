@@ -1,12 +1,15 @@
 <?php
 $pageTitle = 'Complaints';
-require_once '../includes/layout/header.php';
+require_once __DIR__ . '/db.php';
+require_once __DIR__ . '/helpers.php';
+require_once __DIR__ . '/header.php';
+require_once __DIR__ . '/sidebar.php';
 
 $db = getDB();
 $complaints = $db->query("SELECT * FROM complaints ORDER BY registrationDate DESC");
 ?>
 
-<?php require_once '../includes/layout/sidebar.php'; ?>
+
 
 <main class="flex-1 p-8">
     <div class="max-w-7xl mx-auto">
@@ -47,4 +50,4 @@ $complaints = $db->query("SELECT * FROM complaints ORDER BY registrationDate DES
     </div>
 </main>
 
-<?php require_once '../includes/layout/footer.php'; ?>
+<?php require_once __DIR__ . '/footer.php'; ?>

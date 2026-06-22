@@ -1,6 +1,9 @@
 <?php
 $pageTitle = 'Register Student';
-require_once '../includes/layout/header.php';
+require_once __DIR__ . '/db.php';
+require_once __DIR__ . '/helpers.php';
+require_once __DIR__ . '/header.php';
+require_once __DIR__ . '/sidebar.php';
 
 // --- Handle POST ---
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -245,4 +248,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent; }
 </style>
 
-<?php require_once '../includes/layout/footer.php'; ?>
+<?php require_once __DIR__ . '/footer.php'; ?>
