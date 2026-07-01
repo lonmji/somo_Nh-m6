@@ -49,3 +49,5 @@ if (in_array($folder, $allowedFolders)) {
     die("ERROR: Truy cập bị từ chối hoặc Class '$folder' chưa khai báo.");
 }
 ?>
+ cmlgnlkdfng;ksn;nfs
+ sl;fg;ldfng
